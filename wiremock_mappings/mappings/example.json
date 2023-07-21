@@ -1,0 +1,22 @@
+{
+    "request" : {
+        "method" : "GET",
+        "url" : "/user/1/details"
+
+    },
+    "response" : {
+        "status" : 200,
+        "jsonBody" : {
+            "user_id" : "1",
+            "first_name" : "Din Laurence",
+            "last_name" : "Babia",
+            "email_address" : "din@yahoo.com",
+            "country" : "Phillipines"
+        },
+        "headers" : {
+            "Content-Type" : "text/plain"
+        }
+
+    }
+
+}

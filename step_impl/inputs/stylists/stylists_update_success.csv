@@ -1,0 +1,4 @@
+testCase,request_tag,name,type_of_business,email_address,address_street,address_city,address_country
+Success Update of Stylist,create|update,Din Babia|Din Laurence,Barbershop,din@styler.com|dinlaurence123@yahoo.com,sesame street,My City,My Country
+Success Update of Stylist 2,create|update,Laurence,Barbershop|Freelancer,laurence@yahoo.com,oak street,My City,My Country
+Success Update of Stylist 3,create|update,Babia <timestamp>,|Freelancer,babia@yahoo.com,2nd street,My City,My Country

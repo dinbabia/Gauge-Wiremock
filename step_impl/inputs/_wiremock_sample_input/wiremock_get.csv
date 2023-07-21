@@ -1,0 +1,3 @@
+testCase,request_tag,user_id,first_name,last_name,email_address,country
+Get User 1 Success,create,1,Din Laurence,Babia,din@yahoo.com,Phillipines
+Get User 2 Success,create,2,Laurence,Babia,laurence@yahoo.com,Phillipines

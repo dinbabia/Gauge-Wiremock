@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  gauge-test:
+    depends_on:
+     - mocked-services
+    build: ./
+    volumes:
+     - ./:/workspace/unwritten-api
+    command: >
+     sh -c "gauge config runner_connection_timeout 450000 &&
+            gauge run --env "wiremock" specs/_wiremock/sample_wiremock_tests.spec --verbose"
+
+  mocked-services:
+    image: wiremock/wiremock:2.32.0-alpine
+    ports:
+       - 8080:8080
+    volumes:
+       - $PWD/wiremock_mappings:/home/wiremock

@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  gauge-test:
+    build: ./
+    volumes:
+    # Mapping directories from system to docker container.
+    # Update changes to be reflected in the container.
+     - ./:/workspace/unwritten-api
+    environment:
+       - GAUGE_ENVI
+       - GAUGE_SPEC
+       - GAUGE_TABLE_ROW
+    command: >
+     sh -c "gauge config runner_connection_timeout 450000 &&
+            chmod +x ./gauge-docker-compose.sh &&
+            ./gauge-docker-compose.sh"

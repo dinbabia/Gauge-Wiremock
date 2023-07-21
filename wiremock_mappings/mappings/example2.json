@@ -1,0 +1,22 @@
+{
+    "request" : {
+        "method" : "GET",
+        "url" : "/user/2/details"
+
+    },
+    "response" : {
+        "status" : 200,
+        "jsonBody" : {
+            "user_id" : "2",
+            "first_name" : "Laurence",
+            "last_name" : "Babia",
+            "email_address" : "laurence@yahoo.com",
+            "country" : "Phillipines"
+        },
+        "headers" : {
+            "Content-Type" : "text/plain"
+        }
+
+    }
+
+}

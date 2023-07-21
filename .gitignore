@@ -1,0 +1,24 @@
+# Gauge - metadata dir
+.gauge
+
+# Gauge - log files dir
+logs
+
+# Gauge - reports dir
+reports
+
+# Gauge - python compiled files
+*.pyc
+
+.DS_Store
+__pycache__/
+lib/*
+!lib/.gitkeep 
+.vscode/settings.json
+*.cer
+env_*
+env/bin
+env/cx_Oracle-doc
+env/lib
+env/pyvenv.cfg
+venv
